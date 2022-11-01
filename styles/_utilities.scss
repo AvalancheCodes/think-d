@@ -1,0 +1,73 @@
+//
+// utilities.scss
+// Extended from Bootstrap
+//
+
+$utilities: ();
+
+$utilities: map-merge(
+  (
+    // border dotted utilities
+    "border-dotted":
+      (
+        property: border,
+        class: border-dotted,
+        values: (
+          null: 2px dotted $border-color,
+          0: 0,
+        ),
+      ),
+    // Sizing utilities
+    "width":
+      (
+        property: width,
+        class: w,
+        values: (
+          40: 40%,
+        ),
+      ),
+    // height
+    "height":
+      (
+        property: height,
+        class: h,
+        responsive: true,
+        values: (
+          400: 400px,
+          500: 500px,
+          600: 600px,
+          700: 700px,
+          800: 800px,
+          900: 900px,
+        ),
+      ),
+    // viewport height
+    "viewport-height":
+      (
+        property: height,
+        responsive: true,
+        class: vh,
+        values: (
+          100: 100vh,
+        ),
+      ),
+    // Multi gradient
+    "multi-gradient":
+      (
+        property: background,
+        class: bg-multi,
+        values: (
+          gradient:
+            linear-gradient(
+              45deg,
+              //var(--djb-dark-grad-01) 0%,
+              var(--djb-dark-grad-02) 5%,
+              var(--djb-dark-grad-03) 33%,
+              var(--djb-dark-grad-04) 64%
+              //var(--djb-dark-grad-05) 100%
+            ),
+        ),
+      )
+  ),
+  $utilities
+);

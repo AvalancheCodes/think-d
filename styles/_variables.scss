@@ -1,0 +1,75 @@
+$white: #fff;
+$gray-100: #f7f8f9;
+$gray-200: #f0f1f3;
+$gray-300: #dfe0e5;
+$gray-400: #d0d4d9;
+$gray-500: #a1a1a8;
+$gray-600: #515155;
+$gray-700: #29292e;
+$gray-800: #19191c;
+$gray-900: #0f0f10;
+$black: #000;
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+
+$primary: #495b73; // Change theme primary color here
+$secondary: #d8d9d0;
+$success: #148c8b;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: #260101;
+
+// theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$think-pm-cpd: #5F58A6;
+$think-snd-spd: #4232D9;
+
+// gradients
+$dark-grad-1: #262422;
+$dark-grad-2: #2d2927;
+//Gradient map
+$dark-grad: (
+  "01": $dark-grad-1,
+  "02": $dark-grad-2,
+  "03": #686664,
+  "04": #744725,
+  "05": #b79278,
+);
+
+$enable-gradients: true;
+$gradient: linear-gradient(-90deg, rgba($white, 0.95), rgba($white, 0));
+$gradient-dark: linear-gradient(
+  -90deg,
+  var(--djb-dark-grad-03) 5%,
+  var(--djb-dark-grad-02) 55%,
+  var(--djb-dark-grad-02) 100%
+);
+$multi-linear-gradient: linear-gradient(
+  45deg,
+  //var(--djb-dark-grad-01) 0%,
+  var(--djb-dark-grad-02) 5%,
+  var(--djb-dark-grad-03) 33%,
+  var(--djb-dark-grad-04) 64%,
+  var(--djb-dark-grad-05) 100%
+);

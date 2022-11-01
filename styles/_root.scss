@@ -1,0 +1,8 @@
+:root {
+  // add the gradient colors to the root
+  @each $name, $color in $dark-grad {
+    --djb-dark-grad-#{$name}: #{$color};
+  }
+  --djb-multi-gradient: #{$multi-linear-gradient};
+  --djb-grad-dark: #{$gradient-dark};
+}
